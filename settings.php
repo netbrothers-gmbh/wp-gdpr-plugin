@@ -47,7 +47,7 @@ function netbrothers_gdpr_settings_page()
                id="nb-chatbot-remote"
                name="nb-chatbot-remote"
                placeholder="z.B. main-botconsole.production.e-bot7.de"
-               value="<?= get_option('nb-chatbot-remote') ?>">
+               value="<?= get_option('nb-chatbot-remote', 'main-botconsole.production.e-bot7.de') ?>">
         <a class="nb-settings-description"
            target="_blank"
            href="https://netbrothers.de/wordpress-gdpr-plugin#wie-finde-ich-meine-chatbot-instanz">
@@ -63,8 +63,8 @@ function netbrothers_gdpr_settings_page()
                    class="nb-settings-input"
                    id="nb-chatbot-cookie"
                    name="nb-chatbot-cookie"
-                   placeholder="allow_chatbot"
-                   value="<?= get_option('nb-chatbot-cookie', 'allow_chatbot') ?>">
+                   placeholder="netbrothers_allow_chatbot"
+                   value="<?= get_option('nb-chatbot-cookie', 'netbrothers_allow_chatbot') ?>">
             <a class="nb-settings-description"
                target="_blank"
                href="https://netbrothers.de/wordpress-gdpr-plugin#was-ist-mein-chatbot-cookie">
